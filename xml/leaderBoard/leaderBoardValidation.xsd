@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="leaderboard">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="User" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:attribute name="nickname" type="xsd:string" use="required"/>
+            <xsd:attribute name="wins" type="xsd:integer" use="required"/>
+            <xsd:attribute name="losses" type="xsd:integer" use="required"/>
+            <xsd:attribute name="draw" type="xsd:integer" use="required"/>
+            <xsd:attribute name="time_spent" type="xsd:string" use="required"/>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

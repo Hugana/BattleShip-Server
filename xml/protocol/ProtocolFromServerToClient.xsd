@@ -1,0 +1,42 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="protocol">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element name="success">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="data">
+                <xs:complexType>
+                  <xs:attribute name="nickname" type="xs:string" use="required"/>
+                  <xs:attribute name="password" type="xs:string" use="required"/>
+                  <xs:attribute name="nationality" type="xs:string" use="optional"/>
+                  <xs:attribute name="DateOfBirth" type="xs:string" use="optional"/>
+                  <xs:attribute name="Color" type="xs:string" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="message" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="type" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="error">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="data">
+                <xs:complexType>
+                  <xs:attribute name="nickname" type="xs:string" use="required"/>
+                  <xs:attribute name="password" type="xs:string" use="required"/>
+                  <xs:attribute name="nationality" type="xs:string" use="optional"/>
+                  <xs:attribute name="DateOfBirth" type="xs:string" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="message" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="type" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

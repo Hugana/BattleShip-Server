@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="protocol">
+		<xs:complexType>
+			<xs:choice minOccurs="1" maxOccurs="1">
+				<xs:element name="register">
+					<xs:complexType>
+						<xs:attribute name="nickname" type="xs:string"
+							use="required" />
+						<xs:attribute name="password" type="xs:string"
+							use="required" />
+						<xs:attribute name="nationality" type="xs:string"
+							use="required" />
+						<xs:attribute name="dateOfBirth" type="xs:string"
+							use="required" />
+						<xs:attribute name="color" type="xs:string"
+							use="required" />
+					</xs:complexType>
+				</xs:element>
+
+				<xs:element name="login">
+					<xs:complexType>
+						<xs:attribute name="nickname" type="xs:string"
+							use="required" />
+						<xs:attribute name="password" type="xs:string"
+							use="required" />
+					</xs:complexType>
+				</xs:element>
+
+				<xs:element name="play">
+					<xs:complexType>
+						<xs:attribute name="column" type="xs:int"
+							use="required" />
+					</xs:complexType>
+				</xs:element>
+
+				<xs:element name="leaderBoard">
+					<xs:complexType>
+						<xs:attribute name="top" type="xs:int" use="required" />
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="getPlayers">
+					<xs:complexType>
+						<xs:attribute name="query"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="requestToPlay">
+				</xs:element>
+				<xs:element name="getPlayerInfo">
+				<xs:complexType>
+						<xs:attribute name="nickname" type="xs:string" use="required" />
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="changePicture">
+				</xs:element>
+				<xs:element name="seeRankings">
+				</xs:element>
+				<xs:element name="checkInvite">
+				</xs:element>
+				<xs:element name="listOnlinePlayers">
+				</xs:element>
+				<xs:element name="sendInvite">
+				<xs:complexType>
+						<xs:attribute name="nickname" type="xs:string" use="required" />
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="toggleConnect">
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+
+

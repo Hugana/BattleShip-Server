@@ -1,0 +1,97 @@
+<!-- 
+
+Pedidos 
+
+<protocol>
+  <login username="" password="" reply=""/>
+</protocol>
+
+
+<protocol>
+  <register username="" password="" nationality="" dateOfBirth="" reply=""/>
+</protocol>
+
+
+<protocol>
+  <play/ collunm="">
+</protocol>
+
+
+protocol>
+  <leaderboard limit="10" />
+</protocol>	
+
+Outros tipos de pedidos
+-->
+
+
+<!-- 
+respostas
+
+
+<protocol>
+  <success type="login">
+    <message></message>
+  </success>
+</protocol>
+
+<protocol>
+  <error type="login">
+    <message></message>
+  </error>
+</protocol>
+
+
+
+<protocol>
+  <success type="register">
+    <message></message>
+  </success>
+</protocol>
+
+
+<protocol>
+  <error type="register">
+    <message></message>
+  </error>
+</protocol>
+
+
+<protocol>
+  <success type="play">
+    <column></column>
+  </success>
+</protocol>
+
+<protocol>
+  <error type="play">
+    <message></message>
+  </error>
+</protocol>
+
+
+<protocol>
+<success type= "register"/>
+<data nickname="nickname" password="password" nationality=\"" + nationality" DateOfBirth="ateOfBirth"/>
+<message>Register Invalid</message>
+</success>
+</protocol>
+
+
+<protocol>
+  <success type="leaderboard">
+    <data>
+      <user />
+      <user />
+      <user />
+    </data>
+  </success>
+</protocol>
+
+<protocol>
+  <error type="leaderboard">
+   <message>Limite maior que 3</message>
+  </error>
+</protocol>
+
+ -->
